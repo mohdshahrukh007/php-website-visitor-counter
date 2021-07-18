@@ -1,6 +1,7 @@
 <?php
-include_once("constants.php");
+$COUNTER_FILENAME = "counter.txt";
 
+ 
 $counterValue = 0;
 if (file_exists($COUNTER_FILENAME)) {
 	$file = fopen($COUNTER_FILENAME,"r");
